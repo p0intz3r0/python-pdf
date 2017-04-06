@@ -1,6 +1,6 @@
 import pdfquery, csv, os, sys, codecs, unicodecsv, shutil
 from cStringIO import StringIO
-fct_path = 'C:\Users\p0intz3r0\Desktop\COOPTALIS\FACTURES 2016'
+fct_path = 'C:\Users\FACTURES 2016'
 sys.stdout = codecs.getwriter('utf8')(sys.stdout)
 res = {'Filename': '', 'TJM': '', 'jours_pr': '', 'collab': '', 'date': '', 'num': '', 'clientid': '', 'sommettc' : ''}
 ifile = StringIO()
