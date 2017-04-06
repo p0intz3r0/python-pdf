@@ -1,6 +1,6 @@
 import pdfquery, csv, os, sys, codecs, unicodecsv, shutil
 from cStringIO import StringIO
-fct_path = 'C:\Users\p0intz3r0\Desktop\COOPTALIS\FACTURES 2016'
+fct_path = 'C:\Users\'
 sys.stdout = codecs.getwriter('utf8')(sys.stdout)
 res = {'Filename': '', 'TJM': '', 'jours_pr': '', 'collab': '', 'date': '', 'num': '', 'clientid': '', 'sommettc' : ''}
 ifile = StringIO()
@@ -50,6 +50,6 @@ for filename in os.listdir(fct_path):
         res['sommettc'] = montantTTC
         print res
         writer.writerow(res.values())
-with open('C:\Users\p0intz3r0\Desktop\COOPTALIS\FACTURES 2016\extraction_pdf.csv', "wb") as fd:
+with open('C:\Users\extraction_pdf.csv', "wb") as fd:
     ifile.seek(0)
     shutil.copyfileobj(ifile, fd)
